@@ -10,7 +10,7 @@ const searchURL = 'https://api.nps.gov/api/v1/parks';
 
 function formatQueryParams(params) {
   const queryItems = Object.keys(params)
-    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(params[key])}`)
+    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(params[key])}`);
   return queryItems.join('&');
 }
 
@@ -23,7 +23,7 @@ function displayParkInfo(responseJson){
     <li>
       <a target="_blank" href=${responseJson.data[i].url} ><h3 id = 'park-name'>${responseJson.data[i].name}</h3></a>
       <p id = 'park-description'>${responseJson.data[i].description}</p>
-
+      <a target="_blank"href=${responseJson.data[i].url}>Website URL:${responseJson.data[i].url}</a>
     </li>
     `);
   }
