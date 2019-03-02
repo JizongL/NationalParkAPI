@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+li{
+  list-style-type:none;
+  margin-top:35px;
+}
+
+.title-bar{
+  background-color:black;
+  color:white;
+  height:50px;
+  width:100%;
+}
+
+h1{
+  padding-top:10px;
+}
+
+form{
+  margin-top:20px;
+  font-size:15px;
+  
+}
+
+label{
+  margin-left:40px;
+}
+
+
+
+button, input[type="text"] {
+  padding: 5px;
+  
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.error-message {
+    color: red;
+}
+
+.hidden {
+  display: none;
+}
